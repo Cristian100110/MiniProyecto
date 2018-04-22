@@ -23,9 +23,9 @@ void pintar(Coord pos, Coord vel){
 }
 
 int main(){
-    struct TCoord pos = { 0., 0.  },
-                  vel = { 4., 50.  },
-                  acc = { 0., -9.80665  };
+    struct TCoord pos = { 1., 1.  },
+                  vel = { 40.2, 50.  },
+                  acc = { 0., -40.80665  };
 
 
     do{
@@ -33,7 +33,12 @@ int main(){
         pintar(pos, vel);
         usleep(100000);
     }
-    while
+    while(pos.y >= 0);
+
+    if (pos.x>99.9 and pos.x<101.00)
+    {
+    printf("Jugador 1 Gana\n");
+    }
 
     return EXIT_SUCCESS;
 }
