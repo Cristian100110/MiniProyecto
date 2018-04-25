@@ -31,7 +31,7 @@ int main(){
     do{
         actualizar(&pos, &vel, acc);
         pintar(pos, vel);
-        usleep(100000);
+        usleep(50000);
     }
     while(pos.y >= 0);
 
